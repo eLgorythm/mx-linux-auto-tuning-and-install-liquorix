@@ -6,5 +6,6 @@ USE TO
 5. RAM otomatis dibersihkan setiap 30 menit
 
 OPTION :
+
   1 → Install Zen kernel + optimasi
   2 → Reset ke kernel default & hapus semua tweak
