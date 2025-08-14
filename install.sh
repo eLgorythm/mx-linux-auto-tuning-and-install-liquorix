@@ -18,7 +18,7 @@ read -p "Pilih opsi (1/2): " pilihan
 if [[ "$pilihan" == "1" ]]; then
     echo "[1/5] Menambahkan repo Liquorix..."
     echo 'deb http://liquorix.net/debian bookworm main' | tee /etc/apt/sources.list.d/liquorix.list
-    apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 9AE4078033C2352D
+    wget -O /etc/apt/trusted.gpg.d/liquorix.gpg https://liquorix.net/liquorix-keyring.gpg
 
     echo "[2/5] Update repo & install Zen kernel..."
     apt update
